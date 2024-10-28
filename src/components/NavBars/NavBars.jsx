@@ -14,10 +14,14 @@ const NavBars = () => {
   ];
   return (
     <nav>
-      <div className="text-3xl md:hidden" onClick={() => setOper(!open)}>
+      <div className="text-3xl md:hidden p-4" onClick={() => setOper(!open)}>
         {open === true ? <IoMdClose></IoMdClose> : <HiMenuAlt1></HiMenuAlt1>}
       </div>
-      <ul className="md:flex">
+      <ul
+        className={`md:flex absolute p-5 duration-200
+        ${open ? "top-7" : "-top-60"}
+        `}
+      >
         {routes.map((route) => (
           <Link key={route.id} route={route}></Link>
         ))}
