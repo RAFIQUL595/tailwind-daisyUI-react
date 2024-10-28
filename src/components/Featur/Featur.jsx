@@ -8,6 +8,6 @@ const Featur = ({featur}) => {
     );
 };
 Featur.propTypes = {
-    option: PropTypes.string,
+    featur: PropTypes.string,
   };
 export default Featur;
