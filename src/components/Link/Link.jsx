@@ -7,6 +7,6 @@ const Link = ({ route }) => {
   );
 };
 Link.propTypes = {
-  route: PropTypes.object,
+  route: PropTypes.object.isRequired,
 };
 export default Link;
