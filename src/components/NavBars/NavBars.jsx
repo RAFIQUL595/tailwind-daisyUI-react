@@ -14,7 +14,7 @@ const NavBars = () => {
   ];
   return (
     <nav>
-      <div className="text-2xl md:hidden" onClick={() => setOper(!open)}>
+      <div className="text-3xl md:hidden" onClick={() => setOper(!open)}>
         {open === true ? <IoMdClose></IoMdClose> : <HiMenuAlt1></HiMenuAlt1>}
       </div>
       <ul className="md:flex">
