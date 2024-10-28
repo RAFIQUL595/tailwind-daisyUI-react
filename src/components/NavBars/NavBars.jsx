@@ -18,7 +18,7 @@ const NavBars = () => {
         {open === true ? <IoMdClose></IoMdClose> : <HiMenuAlt1></HiMenuAlt1>}
       </div>
       <ul
-        className={`md:flex absolute p-5 duration-200
+        className={`md:flex absolute md:static p-5 duration-200
         ${open ? "top-7" : "-top-60"}
         `}
       >
